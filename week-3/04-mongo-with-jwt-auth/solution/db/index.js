@@ -10,6 +10,7 @@ const AdminSchema = new mongoose.Schema({
     password: String
 });
 
+
 const UserSchema = new mongoose.Schema({
     // Schema definition here
     username: String,

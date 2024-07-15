@@ -10,6 +10,13 @@ let requestCount = 0;
 // maintain a count of the number of requests made to the server in the global
 // requestCount variable
 
+// solution
+app.use((req, res, next) => {
+  requestCount++;
+  next();
+})
+
+// driver code 
 app.get('/user', function(req, res) {
   res.status(200).json({ name: 'john' });
 });
